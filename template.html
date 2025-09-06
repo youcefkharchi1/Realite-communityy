@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Transcript - {{CHANNEL_NAME}}</title>
+<link rel="stylesheet" href="/style.css">
+</head>
+<body>
+  <div class="page">
+    <header class="header">
+      <div class="header-left">
+        <h1>{{GUILD_NAME}}</h1>
+        <div class="sub">#{{CHANNEL_NAME}} • Opened by {{OPENER}}</div>
+      </div>
+      <div class="header-right">Generated: {{GENERATED_AT}}</div>
+    </header>
+    <main class="chat">
+      {{MESSAGES}}
+    </main>
+    <footer class="footer">Transcript viewer — exported from Discord</footer>
+  </div>
+</body>
+</html>

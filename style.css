@@ -1,0 +1,21 @@
+/* Discord-like minimal style for transcripts */
+:root{
+  --bg:#0f1115; --panel:#111318; --muted:#9aa4b2; --text:#e6eef6; --accent:#5865f2;
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--text);font-family:Inter,system-ui,Segoe UI,Roboto,Ubuntu,Arial,sans-serif}
+.page{max-width:900px;margin:28px auto;padding:18px}
+.header{display:flex;justify-content:space-between;align-items:center;margin-bottom:12px}
+.header-left h1{margin:0;font-size:20px}
+.header .sub{color:var(--muted);font-size:13px;margin-top:4px}
+.chat{display:flex;flex-direction:column;gap:12px}
+.message{display:flex;gap:12px;align-items:flex-start;padding:12px;border-radius:10px;background:linear-gradient(180deg, rgba(255,255,255,0.02), transparent);border:1px solid rgba(255,255,255,0.03)}
+.avatar{width:44px;height:44px;border-radius:8px;flex:0 0 44px;object-fit:cover}
+.message-body{flex:1}
+.meta{font-size:13px;color:var(--muted);margin-bottom:6px}
+.meta .author{color:var(--text);font-weight:600;margin-right:8px}
+.content{font-size:15px;line-height:1.45;white-space:pre-wrap;color:var(--text)}
+.att a{display:inline-block;margin-top:8px;padding:6px 8px;border-radius:8px;background:rgba(255,255,255,0.02);text-decoration:none;color:var(--muted);font-size:13px}
+.footer{margin-top:18px;color:var(--muted);font-size:12px;text-align:center}
+.list p{color:var(--muted)}
+code{background:rgba(255,255,255,0.03);padding:2px 6px;border-radius:6px}
